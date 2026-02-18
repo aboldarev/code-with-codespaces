@@ -5,7 +5,7 @@
 "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
 "remoteUser": "codespace",
 "overrideCommand": false, 
-  "customisations": {
+"customisations": {
     "vscode": {
         "extensions": [
             "GitHub.copilot"
@@ -16,5 +16,6 @@
             "codespace.md"
         ]
     }
-}
+},
+"postCreateCommand": "echo '# Writing code upon codespace creation!' >> codespace.md"
 }
